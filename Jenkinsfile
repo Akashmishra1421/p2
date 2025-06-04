@@ -19,21 +19,21 @@ pipeline
     {
       steps
       {
-        sh 'gladlew build'
+        sh 'gladle build'
       }
     }
     stage('test')
     {
       steps
       {
-        sh 'gradlew test'
+        sh 'gradle test'
       }
     }
     stage('')
     {
       steps
       {
-        sh 'gradlew run'
+        sh 'gradle run'
       }
     }
   }
