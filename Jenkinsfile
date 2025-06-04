@@ -19,7 +19,7 @@ pipeline
     {
       steps
       {
-        sh 'gladle build'
+        sh 'gradle build'
       }
     }
     stage('test')
